@@ -1,0 +1,41 @@
+form {
+    width: 30%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 50px;
+    background: #008000;
+    box-shadow:  34px 34px 68px #006d00,
+                 -34px -34px 68px #009300;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

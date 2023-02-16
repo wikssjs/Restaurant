@@ -1,0 +1,21 @@
+<div class='contenu'>
+	{{#each tabPlats}}
+		<div class='images'>
+			<img src={{this.src}} alt={{this.alt}} />
+
+		</div>
+		<div class='description'>
+			<h3>{{this.nom}}</h3>
+			<div class='info'>{{this.description}}</div>
+			<div class='prix'>{{this.prix}}</div>
+			<div class='buttom'>
+				<button
+					class='ajouterAuxPanier'
+					id='ajouterAuxPanier'
+				>Ajouter au panier</button>
+				<button>Acheter maintenant</button>
+			</div>
+		</div>
+
+	{{/each}}
+</div>

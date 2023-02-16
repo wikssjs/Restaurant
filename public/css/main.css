@@ -1,0 +1,381 @@
+.contenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* max-width: 900px; */
+	width: 100%;
+}
+main {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	/* background-image: linear-gradient(); */
+	/* background: linear-gradient(#e66465, #9198e5); */
+}
+.menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+}
+main {
+	background-color: rgb(226, 225, 225);
+	padding: 50px;
+}
+.absolute {
+	position: absolute;
+}
+
+.box {
+	width: 350px;
+	height: 280px;
+	/* background-color: antiquewhite; */
+	margin: 12px;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	padding: 5px;
+	align-items: center;
+	position: relative;
+	box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.09);
+}
+.btnVoirPlus,
+.btn2 {
+	font-size: 1em;
+	color: #fff;
+	background: #fb911f;
+	padding: 15px 20px 10px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.btnVoirPlus:hover {
+	background: #ab5800;
+}
+.ajouterAuxPanier {
+	position: absolute;
+	right: 15px;
+	bottom: 32px;
+	background-color: rgba(255, 166, 0, 0.737);
+	border: none;
+	border-radius: 8px;
+	color: aliceblue;
+	font-size: 1.4rem;
+	transition: all 0.8s;
+	padding: 1px 3px;
+	z-index: 1;
+}
+.ajouterAuxPanier:hover::after {
+	content: 'au panier';
+}
+.box a {
+	width: 100%;
+	height: 85%;
+}
+.descrip {
+	position: absolute;
+	bottom: 5px;
+	left: 2px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	margin: 0;
+}
+.menuPloat {
+	color: black;
+	margin-bottom: 20px;
+	margin-top: 70px;
+	font-size: 2.5rem;
+}
+.menuPloat::first-letter {
+	color: rgb(8, 126, 2);
+}
+.nomPlat {
+	color: rgb(8, 126, 2);
+	font-size: 1.3rem;
+	margin: 0;
+}
+.prix {
+	color: rgb(8, 126, 2);
+	padding-right: 5px;
+}
+.eye {
+	width: 60px;
+}
+
+.imgBox {
+	width: 320px;
+	height: 220px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	z-index: 1;
+	transition: all 0.4s;
+}
+
+.imgBox:hover {
+	transform: scale(1.01);
+}
+
+.apropos {
+	width: 100%;
+	margin: 30px auto;
+}
+.row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.row .col50 {
+	position: relative;
+	width: 500px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.row .col50 h2 {
+	margin-bottom: 20px;
+}
+.titre-texte {
+	color: #000;
+	font-size: 2rem;
+	font-weight: 300px;
+	text-transform: capitalize;
+}
+h2 {
+	font-size: 2.5rem;
+}
+.titre-texte span {
+	color: rgb(8, 126, 2);
+	font-size: 1.5em;
+	font-weight: 700px;
+}
+
+.row .col50 img {
+	height: 500px;
+	max-width: 100%;
+	position: relative;
+	border-radius: 15px;
+	right: 0;
+	left: 0;
+}
+/* expert */
+.expert {
+	width: 100%;
+}
+.expert .titre {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 70px;
+}
+.expert .contenuExpert {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.expert .contenuExpert .boxExpert {
+	width: 250px;
+	margin: 15px;
+}
+.expert .contenuExpert .boxExpert img {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.expert .contenuExpert .boxExpert h3 {
+	color: #111;
+	font-weight: 400;
+	text-align: center;
+}
+/* temoignagne */
+
+.temoignage {
+	background-image: url(/images/img_plats/bg2.jpg);
+	background-size: cover;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 70px;
+	padding: 60px 0;
+}
+
+.temoignage .contenuTemoignage {
+	display: flex;
+	margin-top: 40px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.temoignage .contenuTemoignage .boxtemoignage {
+	width: 340px;
+	margin: 20px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 15px;
+	padding: 40px;
+}
+
+.temoignage .contenuTemoignage .boxtemoignage .imbox {
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.temoignage .contenuTemoignage .boxtemoignage .imbox img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	justify-content: center;
+	align-items: center;
+}
+.box .temoignage .contenuTemoignage .boxtemoignage .text {
+	text-align: center;
+	color: #666;
+	font-style: italic;
+}
+
+.temoignage .contenuTemoignage .boxtemoignage .text h3 {
+	color: #fb911f;
+	margin-top: 20px;
+	font-size: 1em;
+	font-weight: 600;
+}
+.titre.blanc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.blanc .titre-texte {
+	color: #fff;
+}
+
+.blanc .titre-texte,
+.blanc p {
+	color: #fff;
+}
+
+/* contact */
+
+.contacter {
+	background-image: url(/images/img_plats/img-form.jpg);
+	background-size: cover;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	background-position: unset;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+}
+.contacter .noir {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.contactform {
+	padding: 75px 50px;
+	background: #fff;
+	box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+	max-width: 500px;
+	margin-top: 50px;
+	margin: 0 auto;
+}
+
+.contactform .inputboite {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contactform h3 {
+	color: #111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea {
+	width: 100%;
+	border: 1px solid #555;
+	padding: 10px;
+	color: #111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+
+.contactform .inputboite input[type='submit'] {
+	font-size: 1em;
+	font-weight: 700;
+	color: #ffff;
+	background: #fb911f;
+	display: inline-block;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	outline: none;
+	border: none;
+	transition: 0.5s;
+	max-width: 120px;
+	align-items: center;
+	justify-content: center;
+}
+.noir h2 span {
+	color: rgb(8, 126, 2);
+	font-size: 1.5em;
+	font-weight: 700px;
+}
+
+
+.deconnexion{
+	background:none;
+	outline: none;
+	border: none;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size:1.2rem;
+	cursor: pointer;
+}

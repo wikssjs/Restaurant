@@ -1,0 +1,54 @@
+main {
+	/* background-color: rgba(8, 126, 2, 0.411); */
+	background-color: rgba(8, 126, 2, 0.349);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+}
+
+.contenu {
+	background-color: rgba(8, 126, 2, 0.411);
+	max-width: 970px;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin: 20px;
+}
+.images img {
+	width: 550px;
+	height: 400px;
+}
+.description {
+	width: 200px;
+	border: 2px solid rgba(106, 105, 105, 0.662);
+	border-radius: 10px;
+	padding: 5px;
+}
+.buttom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.buttom button {
+	padding: 8px;
+	margin: 5px;
+	max-width: 190px;
+	border-radius: 1rem;
+	border: 2px solid green;
+}
+
+.ajouterAuxPanier {
+	background-color: rgba(255, 166, 0, 0.737);
+	color: aliceblues;
+}
+.description .prix {
+	margin: 20px 0;
+	text-align: right;
+	font-size: 1.5rem;
+	color: black;
+}

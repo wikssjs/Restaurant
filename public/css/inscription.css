@@ -1,0 +1,153 @@
+/* html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+header, footer{
+    background-color: green;
+    text-align: center;
+    color: aliceblue;
+}
+
+header{
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    color: white;
+}
+
+form{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 1rem;
+	background-color: rgb(5, 91, 0);
+    padding: 1rem 5rem 2rem 5rem;
+    margin: 2.3rem 1rem 2.3rem 1rem;
+}
+
+input{
+    width: 17rem;
+}
+
+form div{
+    padding-top: 1rem;
+}
+
+button{
+    background-color: #0077be;
+    border-radius: .2rem;
+    color: white;
+    padding: .4rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.afficher{
+    display: none;
+}
+
+div a{
+    padding-right: 15px;
+    color: aliceblue;
+}
+
+footer{
+    padding: 5px;
+}
+
+@media screen and (min-width: 35rem) {
+    form{
+        margin: 2.86rem 1rem 2.86rem 1rem;
+    }
+    
+} */
+
+main {
+	padding: 0;
+}
+section {
+	background-image: url(/images/img_plats/img-form.jpg);
+	background-size: cover;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	height: 100vh;
+	background-position: unset;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+	color: black;
+}
+
+.connection {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.imputBox {
+	position: relative;
+}
+input[type] {
+	padding: 15px 20px 15px 30px;
+
+	border: 1px solid rgba(28, 28, 28, 0.506);
+	outline: none;
+	background: none;
+	color: rgb(0, 0, 0);
+}
+input[type='submit'] {
+	color: white;
+	background: #fb911f;
+	margin: 15px;
+}
+input[type='submit']:hover {
+	background: #ff9f38;
+	transition: all 0.4s;
+	font-size: 1.2rem;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 45px;
+	background: #fff;
+	box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+	max-width: 500px;
+	margin-top: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+.form > img {
+	width: 100px;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+}
+.form .imputBox,
+a,
+h2 {
+	margin-bottom: 20px;
+	color: black;
+}
+.form h2 {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}

@@ -1,0 +1,167 @@
+<div class='contenu'>
+	<section class='apropos' id='apropos'>
+		<div class='row'>
+			<div class='col50'>
+				<h2 class='titre-texte'><span>A</span> Propos De Nous</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+					dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+			<div class='col50'>
+				<div class='img'>
+					<img src='/images/resto.jpg' alt='image' />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<h2 class='menuPloat'>Menu</h2>
+	<div class='menu' id='menu'>
+
+		{{! <div class='box'>
+
+			<a href='/plat'>
+				<img class='imgBox absolute' src='./images/img_plats/c7.jpg' alt='' />
+			</a>
+			<button class='ajouterAuxPanier'>Ajouter </button>
+			<div class='descrip'>
+				<h3 class='nomPlat'>Nom du plats</h3>
+				<div class='prix'>10.99$</div>
+			</div>
+		</div> }}
+
+		{{#each tabPlats}}
+			<div class='box'>
+
+				<a href='/plat/{{this.plat_id}}' class='box'>
+					<img class='imgBox absolute' src={{this.image}} alt="image plat" />
+				</a>
+				<button class='ajouterAuxPanier'>Ajouter </button>
+				<div class='descrip'>
+					<h3 class='nomPlat'>{{this.Nom}}</h3>
+					<div class='prix'>{{this.Prix}} $</div>
+					{{!-- <div class="description">{{this.Description}}</div> --}}
+				</div>
+			</div>
+
+		{{/each}}
+
+	</div>
+	<div class='btnVoirPlus'>
+		Voir Plus
+	</div>
+
+	<section class='expert' id='expert'>
+		<div class='titre'>
+			<h2 class='titre-texte'>Nos <span>E</span>xperts</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt.
+			</p>
+		</div>
+		<div class='contenuExpert'>
+			<div class='boxExpert'>
+				<div class='imbox'>
+					<img src='/images/img_plats/equipe1.jpg' alt='' />
+				</div>
+				<div class='text'>
+					<h3>Vezely Kanté</h3>
+				</div>
+			</div>
+			<div class='boxExpert'>
+				<div class='imbox'>
+					<img src='/images/img_plats/equipe2.jpg' alt='' />
+				</div>
+				<div class='text'>
+					<h3>Oumar Dramé</h3>
+				</div>
+			</div>
+			<div class='boxExpert'>
+				<div class='imbox'>
+					<img src='/images/img_plats/equipe3.jpg' alt='' />
+				</div>
+				<div class='text'>
+					<h3>James Bell</h3>
+				</div>
+			</div>
+			<div class='boxExpert'>
+				<div class='imbox'>
+					<img src='/images/img_plats/equipe4.jpg' alt='' />
+				</div>
+				<div class='text'>
+					<h3>Blandine Loba</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='temoignage' id='temoignage'>
+		<div class='titre blanc'>
+			<h2 class='titre-texte'>Que Disent Nos
+				<span>C</span>lients</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt.
+			</p>
+		</div>
+		<div class='contenuTemoignage'>
+			<div class='boxtemoignage'>
+				<div class='imbox'>
+					<img src='./images/VG.png' alt='' />
+				</div>
+				<div class='text'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor.</p>
+					<h3>Franck leroi</h3>
+				</div>
+			</div>
+			<div class='boxtemoignage'>
+				<div class='imbox'>
+					<img src='./images/img_plats/t2.jpg' alt='' />
+				</div>
+				<div class='text'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor.</p>
+					<h3>Franck leroi</h3>
+				</div>
+			</div>
+			<div class='boxtemoignage'>
+				<div class='imbox'>
+					<img src='./images/img_plats/t3.jpg' alt='' />
+				</div>
+				<div class='text'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+						tempor.</p>
+					<h3>Franck leroi</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='contacter' id='contact'>
+		<div class='titre noir'>
+			<h2 class='titre-text'><span>C</span>ontact</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+		</div>
+		<div class='contactform'>
+			<h3>Envoyer un message</h3>
+			<div class='inputboite'>
+				<input type='text' placeholder='Nom' />
+			</div>
+			<div class='inputboite'>
+				<input type='email' placeholder='email' />
+			</div>
+			<div class='inputboite'>
+				<textarea placeholder='message'></textarea>
+			</div>
+			<div class='inputboite'>
+				<input type='submit' value='envoyer' />
+			</div>
+		</div>
+	</section>
+</div>

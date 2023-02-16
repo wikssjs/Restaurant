@@ -1,0 +1,45 @@
+<div class="contenuAdmin">
+    
+    {{>admin_navigation}}
+    <div class='tableaux'>
+        <div class="titreComm">
+            <h1 >Menus</h1>
+        </div>
+
+        <div class="tableau">
+            <div class="titre">
+                <h3>N°</h3>
+                <h3>Nom</h3>
+                <h3>Prix</h3>
+                <h3>Source</h3>
+                <h3>Description</h3>
+                <h3>Action</h3>
+            </div>
+            {{#each tabPlats}}
+            <div class="contenuTable">
+                <p>{{@index}}</p>
+                <p>{{this.nom}}</p>
+                <p>{{this.prix}}</p>
+                <p>{{this.src}}</p>
+                <p>{{this.description}}</p>
+                <button>supprimer</button>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class='form'>
+        <h2>Ajouter un plat</h2>
+        <form action=''>
+            <input type='text' id='nom' placeholder='Nom' />
+            <input type='text' id='source' placeholder='Source' />
+            
+            <textarea name="" id="description"placeholder="Description"></textarea>
+            
+            <input type='number' id='prix' min="0" placeholder='Prix' />
+            
+            <input type='number' id='quantite' min="0" placeholder='quantite' />
+            
+            <input type='submit' value='Ajouter' />
+        </form>
+    </div>
+</div>
